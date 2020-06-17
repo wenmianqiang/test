@@ -1,0 +1,213 @@
+body{
+    margin: 0px;
+    background-color: royalblue;
+}
+
+
+div.inner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 页眉区 */
+div#header {
+    width: 1200px;
+    height: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../imges/2.png) repeat-x 0 0;
+}
+div#header div#inhead{
+    width: 1200px;
+    height: 91px;
+    position: relative;
+    background: url(../imges/logo.png) no-repeat;
+    background-size: 91px 91px;
+}
+div#header div#inhead div#in1{
+    margin-left:91px ;
+}
+/* 导航区 */
+div#nav {
+    width: 1200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../imges/151.png);
+
+}
+div#nav div.inner ul.nav{
+    display: block;
+    margin: 0px;
+}
+div#nav div.inner ul.nav li {
+    display: inline-block; 
+}
+div#nav div.inner ul.nav li a:link, div#nav div.inner ul.nav li a:visited {
+    display: inline-block; 
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 25px; 
+    height: 40px;
+    line-height: 40px;
+    color: ghostwhite;
+    text-align: center;
+    text-decoration: none; 
+}
+div#nav div.inner ul.nav li a:hover {
+    background: darkblue;
+}
+
+/* 内容区一 */
+div#contain1{
+    height: 500px;
+}
+div#contain1 div.inner div#contain1_1{
+    width: 400px;
+    height: 492px;
+    background-image: url(../imges/36.png);
+    float: left;
+    border-top: 4px solid  royalblue;
+    border-bottom: 4px solid royalblue;
+}
+div#contain1 div.inner div#contain1_1 div.biaoti {
+    background-color: rgb(39, 175, 141); 
+}
+div#contain1 div.inner div#contain1_1 div.biaoti h2{
+	color: navy;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 4px;
+    text-align: center;
+}
+div#contain1 div.inner div#contain1_1 div.context div#tupian{
+    float: right;
+    width: 156px;
+    height: 208px;
+}
+div#contain1 div.inner div#contain1_1 div.context div#xinxi{
+    float: left;
+    width: 244px;
+    height: 400px;
+}
+div#contain1 div.inner div#contain1_1 div.context div#xinxi ul{
+    margin: 0px;
+    padding-left: 25px;
+    list-style-type: none;
+}
+div#contain1 div.inner div#contain1_1 div.context div#xinxi ul li p{
+    text-indent: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+div#contain1 div.inner div#contain1_2{
+    width: 800px;
+    height: 492px;
+    background-image: url(../imges/45.png);
+    float: left;
+    border-top: 4px solid   royalblue;
+    border-bottom: 4px solid  royalblue;
+}
+div#contain1 div.inner div#contain1_2 div#hea{
+    background-color: seagreen;
+}
+div#contain1 div.inner div#contain1_2 div#hea h2{
+	color: navy;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 4px;
+    text-align: center;
+}
+div#contain1 div.inner div#contain1_2 div.school{
+    height: 142px;
+    border: 4px solid   blue;
+
+}
+div#contain1 div.inner div#contain1_2 div.school div.img{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+div#contain1 div.inner div#contain1_2 div.school div.para{
+    width: 432px;
+    float: left;
+}
+div#contain1 div.inner div#contain1_2 div.school div.para h4{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 25px; 
+    margin-bottom: 10px;
+}
+div#contain1 div.inner div#contain1_2 div.school div.para p{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+    text-indent: 1.5em;
+}
+
+
+/* 内容区二 */
+div#contain2{
+    height: 300px;
+    border-bottom: 4px solid  royalblue;
+}
+div#contain2 div.inner div.head{
+    height: 40px;
+    border-bottom: 2px solid #d9d7cb;
+}
+div#contain2 div.inner div.head h2{
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 23px;
+    font-family: "Microsoft Yahei";
+    font-weight: normal;
+   
+}
+div#contain2 div.inner div.parag ul{
+    margin: 0px;
+    list-style-type: decimal-leading-zero; /*list-style-type 属性设置列表项标记的类型。0开头的数字标记 */
+}
+div#contain2 div.inner div.parag li{
+    margin-top: 20px;
+    font-weight: bolder;
+    
+}
+div#contain2 div.inner div#contain2_1{
+    width: 400px;
+    height: 296px;
+    background-image: url(../imges/五河街头★唯美背景461.gif);
+    float: left;
+    
+
+}
+div#contain2 div.inner div#contain2_2{
+    width: 400px;
+    height: 296px;
+    background-image: url(../imges/五河街头★唯美背景465.gif);
+    float: left;
+    
+}
+div#contain2 div.inner div#contain2_3{
+    width: 400px;
+    height: 296px;
+    background-image: url(../imges/五河街头★唯美背景459.gif);
+    float: right;
+   
+}
+
+/* 页脚区 */
+div#footer {
+    height: 91px;
+    background-image: url(../imges/五河街头★唯美背景151.gif);
+}
+div#footer div.inner div#bot{
+    margin-top: 0px;
+    height: 30px;
+    padding-top: 34px;
+    text-align: center;
+    color: #fff;
+}

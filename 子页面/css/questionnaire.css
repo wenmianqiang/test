@@ -1,0 +1,111 @@
+body{
+    margin: 0px;
+    background-color: royalblue;
+}
+
+
+div.inner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 页眉区 */
+div#header {
+    width: 1200px;
+    height: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../imges/2.png) repeat-x 0 0;
+}
+div#header div#inhead{
+    width: 1200px;
+    height: 91px;
+    position: relative;
+    background: url(../../imges/logo.png) no-repeat;
+    background-size: 91px 91px;
+}
+div#header div#inhead div#in1{
+    margin-left:91px ;
+}
+/* 导航区 */
+div#nav {
+    width: 1200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../imges/151.png);
+
+}
+div#nav div.inner ul.nav{
+    display: block;
+    margin: 0px;
+}
+div#nav div.inner ul.nav li {
+    display: inline-block; 
+}
+div#nav div.inner ul.nav li a:link, div#nav div.inner ul.nav li a:visited {
+    display: inline-block; 
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 25px; 
+    height: 40px;
+    line-height: 40px;
+    color: ghostwhite;
+    text-align: center;
+    text-decoration: none; 
+}
+div#nav div.inner ul.nav li a:hover {
+    background: darkblue;
+}
+
+/* 内容区 */
+div#contain div.inner{
+    background-color: #efe5d0; 
+}
+div#contain div.inner div.zhuangshi{
+    height: 100px;
+    width: 1200px;
+    position: relative;
+    background-image: url(../images/11.png);
+    background-size: 100px 100px ;
+    
+}
+div#contain div.inner form{
+    width: 1192px;
+    display: table;
+    margin: 0px;
+    padding: 0px;
+    border:  solid  black 4px;/*#7e7e7e*/
+    background-color: #e1ceb8;
+}
+div#contain div.inner form textarea{
+    width: 500px;
+    height: 200px;
+}
+div.tablerow{
+    display: table-row;
+}
+div.tablerow p{
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+}
+div.tablerow p:first-child{
+    text-align: right;
+}
+div.tablerow p.heading{
+    font-weight: bold;
+}
+
+/* 页脚区 */
+div#footer {
+    height: 91px;
+    background-image: url(../../imges/五河街头★唯美背景151.gif);
+}
+div#footer div.inner div#bot{
+    margin-top: 0px;
+    height: 30px;
+    padding-top: 34px;
+    text-align: center;
+    color: #fff;
+}

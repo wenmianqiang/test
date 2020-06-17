@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站-我的收藏</title>
+    <link rel="stylesheet" href="./css/collect.css" type="text/css">
+    <script></script>
+    <script src="./pictureslide/js/jquery-1.7.2.min.js" type="text/javascript" ></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="inhead">
+            <div id="in1"><img src="../imges/网站.png" alt=""></div>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="inner">
+            <div class="inner">
+                <ul class="nav">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="./interest.html">兴趣爱好</a></li>
+                    <li><a href="./collect.html">我的收藏</a></li>
+                    <li><a href="./questionnaire.html">互动</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contain1">
+        <div class="inner">
+            <div class="head">
+                <h2><strong>网站收藏</strong></h2>
+            </div>
+            <div id="list">
+                <div class="tablerow">
+                    <div class="lie">
+                        <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://www.zhihu.com/signin?next=%2F" target="_blank">知乎</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://weibo.com/" target="_blank">微博</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://www.guancha.cn/" target="_blank">观察者网</a>
+                    </div>
+                </div>
+                <div class="tablerow">
+                    <div class="lie">
+                        <a href="https://www.cnki.net/" target="_blank">中国知网</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://www.csdn.net/" target="_blank">CSDN</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://xueshu.baidu.com/" target="_blank">百度学术</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://leetcode-cn.com/" target="_blank">力扣官网</a>
+                    </div>
+                </div>
+                <div class="tablerow">
+                    <div class="lie">
+                        <a href="https://www.runoob.com/" target="_blank">菜鸟教程</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://ibaotu.com/" target="_blank">包图网</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://www.sciencedirect.com/" target="_blank">ScienceDirect</a>
+                    </div>
+                    <div class="lie">
+                        <a href="https://www.icourse163.org/" target="_blank">中国大学慕课</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contain2">
+        <div class="inner">
+            <div class="head">
+                <h2><strong>图片收藏</strong></h2>
+            </div>
+            <div id="photos">
+                <div class="pic">
+                    <div class="content">
+                        <img src="./pictureslide/imgs/001.jpg" alt="">
+                        <img src="./pictureslide/imgs/002.jpg" alt="">
+                        <img src="./pictureslide/imgs/003.jpg" alt="">
+                        <img src="./pictureslide/imgs/004.jpg" alt="">
+                        <img src="./pictureslide/imgs/005.jpg" alt="">
+                        <img src="./pictureslide/imgs/006.jpg" alt="">
+                        <img src="./pictureslide/imgs/007.jpg" alt="">
+                        <img src="./pictureslide/imgs/008.jpg" alt="">
+                        <img src="./pictureslide/imgs/009.jpg" alt="">
+                        <img src="./pictureslide/imgs/010.jpg" alt="">
+                        <img src="./pictureslide/imgs/011.jpg" alt="">
+                        <img src="./pictureslide/imgs/012.jpg" alt="">
+                        <img src="./pictureslide/imgs/013.jpg" alt="">
+                        <img src="./pictureslide/imgs/014.jpg" alt="">
+                        <img src="./pictureslide/imgs/015.jpg" alt="">
+                        
+                    </div>
+                    <ul class="index">
+                        <li class="first"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="right">&gt;</div>
+                    <div class="left">&lt;</div>
+                </div>
+                <script type="text/javascript">
+                    $(function(){
+                        //每个固定的时间移动图片
+                        var timer = setInterval(picLoop,1000);
+                        var index = 0;
+                        function picLoop(){
+                            index++;
+                            if (index==15) {index=0;}
+                            $(".content").animate({"left":-1200*index},300);
+                            $("li").eq(index).css("background-color","red")
+                                   .siblings().css("background-color","rgba(100,100,100,0.3)");
+                        }
+             
+                        //定时器的控制
+                        $(".pic").hover(function(){
+                            clearInterval(timer);
+                            $(".left").show();
+                            $(".right").show();
+                        },function(){
+                            timer = setInterval(picLoop,1000);
+                            $(".left").hide();
+                            $(".right").hide();
+                        })
+             
+                        $("li").mouseover(function(){
+                            $(this).css("background-color","red")
+                                   .siblings().css("background-color","rgba(100,100,100,0.3)");
+                            index = $(this).index();
+                            $(".content").animate({"left":-1200*index},300);
+             
+                        })
+             
+                        $(".left").click(function(){
+                            index--;
+                            if (index==-1) {index=14;}
+                            $(".content").animate({"left":-1200*index},300);
+                            $("li").eq(index).css("background-color","red")
+                                   .siblings().css("background-color","rgba(100,100,100,0.3)");
+                        })
+                        $(".right").click(function(){
+                            index++;
+                            if (index==15) {index=0}
+                            $(".content").animate({"left":-1200*index},300);
+                            $("li").eq(index).css("background-color","red")
+                                   .siblings().css("background-color","rgba(100,100,100,0.3)");    
+                        })
+             
+             
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="inner">
+            <div id="bot">©&nbsp;本网站版权为文绵强所有！</div>
+        </div>
+    </div>
+</body>
+
+</html>

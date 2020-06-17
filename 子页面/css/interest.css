@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+    background-color: royalblue;
+}
+
+
+div.inner {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 页眉区 */
+div#header {
+    width: 1200px;
+    height: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../../imges/2.png) repeat-x 0 0;
+}
+div#header div#inhead{
+    width: 1200px;
+    height: 91px;
+    position: relative;
+    background: url(../../imges/logo.png) no-repeat;
+    background-size: 91px 91px;
+}
+div#header div#inhead div#in1{
+    margin-left:91px ;
+}
+/* 导航区 */
+div#nav {
+    width: 1200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../../imges/151.png);
+
+}
+div#nav div.inner ul.nav{
+    display: block;
+    margin: 0px;
+}
+div#nav div.inner ul.nav li {
+    display: inline-block; 
+}
+div#nav div.inner ul.nav li a:link, div#nav div.inner ul.nav li a:visited {
+    display: inline-block; 
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0 25px; 
+    height: 40px;
+    line-height: 40px;
+    color: ghostwhite;
+    text-align: center;
+    text-decoration: none; 
+}
+div#nav div.inner ul.nav li a:hover {
+    background: darkblue;
+}
+
+/* 内容区一 */
+div#contain1{
+    height: 500px;
+    border-bottom: 4px solid  royalblue;
+
+}
+div#contain1 div.inner{
+    background-color: wheat;
+
+}
+div#contain1 div.inner div.head{
+    height: 100px;
+    width: 1200px;
+    position: relative;
+    background: url(../images/bs-logo.png) no-repeat;
+    background-size: 100px 100px;
+}
+div#contain1 div.inner div.head h1{
+    font-size: 60px;
+    font-weight: normal;
+    margin: 4px;
+    padding-left: 150px;
+    padding-top: 10px;
+    text-align: left;
+}
+div#contain1 div.inner div#bsimg{
+    height: 400px;
+}
+
+/* 内容区二 */
+div#contain2{
+    height: 600px;
+    border-bottom: 4px solid  royalblue;
+}
+div#contain2 div.inner{
+    background-color: wheat;
+
+}
+div#contain2 div.inner div.head{
+    height: 100px;
+    width: 1200px;
+    position: relative;
+    background: url(../images/reng-logo.png) no-repeat;
+    background-size: 100px 100px;
+}
+div#contain2 div.inner div.head h1{
+    font-size: 60px;
+    font-weight: normal;
+    margin: 4px;
+    padding-left: 150px;
+    padding-top: 10px;
+    text-align: left;
+}
+div#contain2 div.inner div#tablecontainer{/*使用CSS创建表格显示*/
+    display:table;
+	margin: 0px;
+    height: 500px;
+    background-color: white;
+    overflow: hidden;
+
+}
+div#tablerow{
+    display:table-row;
+    margin: 0px;
+    height: 250px;
+}
+div#tablerow div.lie{
+    display:table-cell;
+    vertical-align: top;
+    margin: 0px;
+	width: 230px;
+    height: 240px;
+    border:  cadetblue solid 5px;
+}
+div#tablerow div.lie p{
+    padding: 0px;
+    margin: 0px;
+    font-weight: bolder;
+
+} 
+/* 内容区三 */
+div#contain3{
+    height: 264px;
+}
+div#contain3 div.inner{
+    background-color: wheat;
+
+}
+div#contain3 div.inner div.head{
+    height: 100px;
+    width: 1200px;
+    position: relative;
+    background: url(../images/carton-logo.png) no-repeat;
+    background-size: 100px 100px;
+}
+div#contain3 div.inner div.head h1{
+    font-size: 60px;
+    font-weight: normal;
+    margin: 4px;
+    padding-left: 150px;
+    padding-top: 10px;
+    text-align: left;
+}
+div#contain3 div.inner div.biaoge{
+    height: 164px;
+    background-color: honeydew;
+}
+
+div#contain3 div.inner div.biaoge td {
+    border: solid #555;
+    border-width: 0px 5px 5px 0px;
+    padding: 2px 10px;
+    width : 20%;
+    height: 32px;
+    text-align: center;
+}
+div#contain3 div.inner div.biaoge a{
+    text-decoration: none; 
+    color: #5A5A5A;
+}
+div#contain3 div.inner div.biaoge a:hover { color:#cd0200;}
+/* 内容区四 */
+div#contain4{
+    height: 910px; 
+    border-bottom: 4px solid  royalblue;
+}
+div#contain4 div.inner{
+    background-color: wheat;
+
+}
+div#contain4 div.inner div.head{
+    height: 100px;
+    width: 1200px;
+    position: relative;
+    background: url(../images/comics-logo.png) no-repeat;
+    background-size: 100px 100px;
+}
+div#contain4 div.inner div.head h1{
+    font-size: 60px;
+    font-weight: normal;
+    margin: 4px;
+    padding-left: 150px;
+    padding-top: 10px;
+    text-align: left;
+}
+div#contain4 div.inner div.biaoge{
+    background-color: honeydew;
+}
+
+div#contain4 div.inner div.biaoge td {
+    border: solid #555;
+    border-width: 0px 5px 5px 0px;
+    padding: 2px 10px;
+    width : 20%;
+    height: 32px;
+    text-align: center;
+}
+div#contain4 div.inner div.biaoge a{
+    text-decoration: none; 
+    color: #5A5A5A;
+}
+div#contain4 div.inner div.biaoge a:hover { color:#cd0200;}
+/* 页脚区 */
+div#footer {
+    height: 91px;
+    background-image: url(../../imges/五河街头★唯美背景151.gif);
+}
+div#footer div.inner div#bot{
+    margin-top: 0px;
+    height: 30px;
+    padding-top: 34px;
+    text-align: center;
+    color: #fff;
+}
